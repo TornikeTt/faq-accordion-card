@@ -27,22 +27,38 @@
         <main>
             <div class="container">
                 <div class="image-container">
-                    <img
-                        src="./images/bg-pattern-desktop.svg"
-                        alt="Background Pattern"
-                        class="image-bg-pattern"
-                    />
-                    <img
-                        src="./images/illustration-woman-online-desktop.svg"
-                        alt="Woman Online Illustration"
-                        class="image-woman-online"
-                    />
+                    <picture>
+                        <source
+                            media="max-width: 375px"
+                            srcset="./images/bg-pattern-mobile.svg"
+                        />
+                        <img
+                            src="./images/bg-pattern-desktop.svg"
+                            alt="Background Pattern"
+                            class="image-bg-pattern"
+                        />
+                    </picture>
+
+                    <picture>
+                        <source
+                            media="(max-width: 375px)"
+                            srcset="
+                                ./images/illustration-woman-online-mobile.svg
+                            "
+                        />
+
+                        <img
+                            src="./images/illustration-woman-online-desktop.svg"
+                            alt="Woman Online Illustration"
+                            class="image-woman-online"
+                        />
+                    </picture>
                 </div>
 
                 <div class="faq-container">
                     <h1 class="faq-title">FAQ</h1>
 
-                    <!-- 1 - faq item-->
+                    <!-- 1 - faq item start -->
                     <div class="faq-item">
                         <div class="faq-question">
                             <p class="question-text">
@@ -60,9 +76,9 @@
                             Premium plan.
                         </p>
                     </div>
+                    <!-- 1 - faq item end -->
 
-                    <!-- 2 - faq item-->
-
+                    <!-- 2 - faq item start-->
                     <div class="faq-item">
                         <div class="faq-question">
                             <p class="question-text">
@@ -79,19 +95,68 @@
                             your allotted storage space.
                         </p>
                     </div>
+                    <!-- 2 - faq item end-->
+
+                    <!-- 3 - faq item start -->
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <p class="question-text">
+                                How do I reset my password?
+                            </p>
+                            <img
+                                src="./images/icon-arrow-down.svg"
+                                alt="Arrow Down Icon"
+                                class="arrow-icon"
+                            />
+                        </div>
+                        <p class="faq-answer">
+                            Click “Forgot password” from the login page or
+                            “Change password” from your profile page. A reset
+                            link will be emailed to you.
+                        </p>
+                    </div>
+                    <!-- 3 - faq item end-->
+
+                    <!-- 4 - faq item start -->
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <p class="question-text">
+                                Can I cancel my subscription?
+                            </p>
+                            <img
+                                src="./images/icon-arrow-down.svg"
+                                alt="Arrow Down Icon"
+                                class="arrow-icon"
+                            />
+                        </div>
+                        <p class="faq-answer">
+                            Yes! Send us a message and we’ll process your
+                            request no questions asked.
+                        </p>
+                    </div>
+                    <!-- 4 - faq item end-->
+
+                    <!-- 5 - faq item start -->
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <p class="question-text">
+                                Do you provide additional support?
+                            </p>
+                            <img
+                                src="./images/icon-arrow-down.svg"
+                                alt="Arrow Down Icon"
+                                class="arrow-icon"
+                            />
+                        </div>
+                        <p class="faq-answer">
+                            Chat and email support is available 24/7. Phone
+                            lines are open during normal business hours.
+                        </p>
+                    </div>
+                    <!-- 5 - faq item end-->
                 </div>
             </div>
         </main>
         <script src="./script.js"></script>
     </body>
 </html>
-
-<!-- 
-           How do I
-        reset my password? Click “Forgot password” from the login page or
-        “Change password” from your profile page. A reset link will be emailed
-        to you. Can I cancel my subscription? Yes! Send us a message and we’ll
-        process your request no questions asked. Do you provide additional
-        support? Chat and email support is available 24/7. Phone lines are open
-        during normal business hours.
--->
