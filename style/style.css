@@ -4,4 +4,90 @@
   box-sizing: border-box;
 }
 
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: line;
+  background: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%)) no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  width: 1000px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+main::before {
+  content: "";
+  position: absolute;
+  background: url("../images/illustration-box-desktop.svg") no-repeat;
+  background-size: contain;
+  object-fit: cover;
+  width: 191px;
+  height: 184px;
+  left: 0;
+  top: 60%;
+  left: 50px;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+main .container {
+  width: 900px;
+  height: 480px;
+  border-radius: 20px;
+  background-color: white;
+  overflow: hidden;
+  display: flex;
+}
+
+.image-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.image-container .image-woman-online {
+  margin-left: -100px;
+}
+.image-container .image-bg-pattern {
+  position: absolute;
+  right: 0px;
+  bottom: -170px;
+}
+
+.faq-container {
+  padding: 50px 90px;
+}
+.faq-container .faq-title {
+  margin-bottom: 20px;
+}
+.faq-container .faq-item .faq-question {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.faq-container .faq-item .faq-question .question-text {
+  cursor: pointer;
+}
+.faq-container .faq-item .faq-question .question-text:hover {
+  color: hsl(14, 88%, 65%);
+}
+.faq-container .faq-item .faq-question img {
+  cursor: pointer;
+}
+.faq-container .faq-item .faq-answer {
+  margin-top: 10px;
+}
+.faq-container .faq-item::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: hsl(240, 5%, 91%);
+  margin-top: 10px;
+}
+
 /*# sourceMappingURL=style.css.map */
